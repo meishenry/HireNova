@@ -1,0 +1,344 @@
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+.logo-box {
+    position: relative;
+    display: flex;
+    left: -10px;
+    top: -10px;
+    width: 98%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 30px solid white;
+    background-color: white;
+}
+
+.logo-box .logo{
+    position: absolute;
+    top: -20px;
+    left: 200px;
+    width: 320px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+    background-image: url(./images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 22vh;
+    background-position: center;
+    cursor: pointer;
+}
+
+.background {
+    position: relative;
+    display: flex;
+    left: -10px;
+    top: -10px;
+    width: 193.9vh;
+    height: 2%;
+}
+
+.background .main-image {
+    position: absolute;
+    width: 193.9vh;
+    height: 50vh;
+    background-image: url(./images/main-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.search-container {
+    position: relative;
+    top: 39vh;
+    left: -8px;
+    width: 193.7vh;
+    height: 100px;
+    background-color: rgba(200, 200, 200, 0.7);
+}
+
+.search-container .job-bar {
+    position: absolute;
+    top: 30px;
+    left: 160px;
+    width: 40vh;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-family: montserrat;
+    letter-spacing: 2px;
+    font-size: 17px;
+    text-indent: 60px;
+    outline: none;
+}
+
+.search-container .choose-location select {
+    position: absolute;
+    appearance: none;
+    top: 30px;
+    left: 58vh;
+    width: 23vh;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-family: montserrat;
+    letter-spacing: 2px;
+    font-size: 17px;
+    text-align: left;
+    text-indent: 20px;
+    outline: none;
+}
+
+.choose-location::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 48px;
+    left: 778px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid black;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transform: rotate(45deg);
+}
+
+.choose-location::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 43px;
+    left: 778px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid black;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transform: rotate(-135deg);
+}
+
+.search-container .ai-support {
+    position: absolute;
+    top: 30px;
+    left: 150vh;
+    width: 22vh;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-family: montserrat;
+    letter-spacing: 2px;
+    font-size: 17px;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.search-container .ai-support-logo {
+    position: absolute;
+    border: none;
+    top: 13px;
+    left: 172.5vh;
+    width: 80px;
+    height: 70px;
+    background-image: url(./images/ai-support-logo.png);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.open-position-box {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    top: 40vh;
+    left: 27vh;
+    font-family: montserrat;
+    letter-spacing: 2px;
+    width: 193.7vh;
+}
+
+.operation-box {
+    position: relative;
+    top: 40vh;
+    left: 27vh;
+    width: 136vh;
+    height: 27vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.operation-box .operation {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    font-family: montserrat;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
+.operation-box .open-role-box {
+    position: absolute;
+    background-color: rgb(200, 200, 200);
+    top: 7px;
+    left: 121.5vh;
+    width: 140px;
+    height: 25px;
+    border: none;
+    border-radius: 14px;
+}
+
+.open-role-box .open-role-text {
+    position: absolute;
+    top: 2px;
+    padding: 0px;
+    margin: 0px;
+    width: 140px;
+    height: 25px;
+    text-align: center;
+    font-family: montserrat;
+}
+
+.operation-box .text-box {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    width: 135.5vh;
+    height: 180px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+.operation-box .text-box .job-title {
+    position: absolute;
+    width: 135.5vh;
+    height: 180px;
+    text-indent: 40px;
+    font-family: montserrat;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.operation-box .text-box .job-description {
+    position: absolute;
+    top: 70px;
+    width: 130vh;
+    height: 120px;
+    padding: 0px;
+    margin: 0px;
+    text-indent: 40px;
+    font-family: montserrat;
+    font-size: 18px;
+} 
+
+.technology-box {
+    position: relative;
+    top: 40vh;
+    left: 27vh;
+    width: 136vh;
+    height: 30vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.technology-box .technology {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    font-family: montserrat;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
+.technology-box .open-role-box-technology {
+    position: absolute;
+    background-color: rgb(200, 200, 200);
+    top: 7px;
+    left: 121.5vh;
+    width: 140px;
+    height: 25px;
+    border: none;
+    border-radius: 14px;
+}
+
+.open-role-box-technology .open-role-text-technology {
+    position: absolute;
+    top: 2px;
+    padding: 0px;
+    margin: 0px;
+    width: 140px;
+    height: 25px;
+    text-align: center;
+    font-family: montserrat;
+}
+
+.technology-box .text-box-technology {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    width: 135.5vh;
+    height: 180px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+.technology-box .text-box-technology .job-title-technology {
+    position: absolute;
+    text-indent: 40px;
+    font-family: montserrat;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.technology-box .text-box-technology .job-description-technology {
+    position: absolute;
+    top: 70px;
+    width: 130vh;
+    height: 120px;
+    padding: 0px;
+    margin: 0px;
+    text-indent: 40px;
+    font-family: montserrat;
+    font-size: 18px;
+} 
+
+.bottom-box {
+    position: fixed;
+    left: -20px;
+    top: 97vh;
+    padding: 0px;
+    margin: 0px;
+    width: 200vh;
+    height: 30px;
+    border: none;
+    background-color: #4286f5;
+}
+
+.ai-support:hover {
+    background-color: rgb(220,220,220);
+}
+
+.ai-support:active {
+    background-color: white;
+}
+
+.job-title:hover {
+    color: #4286f5;
+}
+
+.job-title-technology:hover {
+    color: #4286f5;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
