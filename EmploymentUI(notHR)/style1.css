@@ -1,361 +1,162 @@
-body {
-    background-color: white;
+ /* Base styles */
+ body {
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
+
+/* Header and Logo */
 .logo-box {
-    position: relative;
-    display: flex;
-    left: -10px;
-    top: -10px;
-    width: 98%;
-    height: 30px;
-    margin: 0;
     padding: 0;
-    border: 30px solid white;
-    background-color: white;
-    display: flex;
 }
 
-.logo-box .logo{
-    position: absolute;
-    top: -20px;
-    left: 200px;
-    width: 320px;
-    height: 80px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: white;
+.logo {
+    width: 220px;
+    height: 100px;
     background-image: url(./images/logo.png);
     background-repeat: no-repeat;
-    background-size: 22vh;
+    background-size: contain;
     background-position: center;
     cursor: pointer;
-    display: flex;
+    border: none;
+    background-color: transparent;
 }
-
-.background {
-    position: relative;
-    display: flex;
-    left: -10px;
-    top: -10px;
-    width: 100vw;
-    height: 2%;
-}
-
-.background .main-image {
-    position: absolute;
-    width: 100vw;
+/* Main Image Section */
+.main-image {
+    width: 100%;
     height: 50vh;
     background-image: url(./images/main-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
-    display: flex;
+    background-position: center;
 }
 
+/* Search Container */
 .search-container {
     position: relative;
-    top: 39vh;
-    left: -8px;
-    width: 100vw;
-    height: 100px;
+    top: -80px;
+    width: 100%;
+    padding: 20px;
     background-color: rgba(200, 200, 200, 0.7);
 }
 
-.search-container #job-bar {
-    position: absolute;
-    top: 30px;
-    left: 160px;
-    width: 40vh;
-    height: 40px;
-    border: none;
+.search-form-control {
     border-radius: 10px;
-    background-color: white;
-    font-family: montserrat;
+    font-family: inherit;
     letter-spacing: 2px;
-    font-size: 17px;
-    text-indent: 60px;
+    font-size: 16px;
     outline: none;
-    flex-wrap: wrap;
+    height: 40px;
+    text-indent: 40px;
+    width: 400px;
 }
 
-.search-container #choose-location select {
-    position: absolute;
+.location-select {
+    border-radius: 10px;
+    font-family: inherit;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 40px;
     appearance: none;
-    top: 30px;
-    left: 58vh;
-    width: 23vh;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    background-color: white;
-    font-family: montserrat;
-    letter-spacing: 2px;
-    font-size: 17px;
-    text-align: left;
-    text-indent: 20px;
-    outline: none;
-    flex-wrap: wrap;
-}
-
-#choose-location::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 48px;
-    left: 778px;
-    width: 6px;
-    height: 6px;
-    border: 1px solid black;
-    border-left-color: transparent;
-    border-top-color: transparent;
-    transform: rotate(45deg);
-    display: flex;
-}
-
-#choose-location::before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 43px;
-    left: 778px;
-    width: 6px;
-    height: 6px;
-    border: 1px solid black;
-    border-left-color: transparent;
-    border-top-color: transparent;
-    transform: rotate(-135deg);
-    display: flex;
-}
-
-.search-container .search {
-    flex-wrap: wrap;
-}
-
-.search-container .ai-support {
-    position: absolute;
-    top: 30px;
-    left: 150vh;
-    width: 22vh;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    background-color: white;
-    font-family: montserrat;
-    letter-spacing: 2px;
-    font-size: 17px;
-    text-align: center;
-    transition: all 0.1s ease-in-out;
-    cursor: pointer;
-    display: flex;
-}
-
-.search-container .ai-support-logo {
-    position: absolute;
-    border: none;
-    top: 13px;
-    left: 172.5vh;
-    width: 80px;
-    height: 70px;
-    background-image: url(./images/ai-support-logo.png);
-    background-color: transparent;
-    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 9L1 4h10z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    cursor: pointer;
-    display: flex;
+    background-position: right 10px center;
+    background-size: 12px;
+    margin-left: 20px;
+    width: 200px;
 }
 
-.open-position-box {
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    top: 40vh;
-    left: 27vh;
-    font-family: montserrat;
-    letter-spacing: 2px;
-    width: 193.7vh;
-}
-
-.operation-box {
-    position: relative;
-    top: 40vh;
-    left: 27vh;
-    width: 136vh;
-    height: 27vh;
-    padding: 0px;
-    margin: 0px;
-}
-
-.operation-box .operation {
-    position: absolute;
-    padding: 0px;
-    margin: 0px;
-    font-family: montserrat;
-    letter-spacing: 2px;
-    font-size: 28px;
-}
-
-.operation-box .open-role-box {
-    position: absolute;
-    background-color: rgb(200, 200, 200);
-    top: 7px;
-    left: 121.5vh;
-    width: 140px;
-    height: 25px;
+.ai-support {
+    height: 40px;
     border: none;
-    border-radius: 14px;
-}
-
-.open-role-box .open-role-text {
-    position: absolute;
-    top: 2px;
-    padding: 0px;
-    margin: 0px;
-    width: 140px;
-    height: 25px;
-    text-align: center;
-    font-family: montserrat;
-}
-
-.operation-box .text-box {
-    position: absolute;
-    top: 60px;
-    display: flex;
-    width: 135.5vh;
-    height: 180px;
-    padding: 0px;
-    margin: 0px;
-    border: 1px solid black;
-}
-
-.operation-box .text-box .job-title {
-    position: absolute;
-    width: 135.5vh;
-    height: 180px;
-    text-indent: 40px;
-    font-family: montserrat;
-    font-size: 26px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: inherit;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
-}
-
-.operation-box .text-box .job-description {
-    position: absolute;
-    top: 70px;
-    width: 130vh;
-    height: 120px;
-    padding: 0px;
-    margin: 0px;
-    text-indent: 40px;
-    font-family: montserrat;
-    font-size: 18px;
-} 
-
-.technology-box {
-    position: relative;
-    top: 40vh;
-    left: 27vh;
-    width: 136vh;
-    height: 30vh;
-    padding: 0px;
-    margin: 0px;
-}
-
-.technology-box .technology {
-    position: absolute;
-    padding: 0px;
-    margin: 0px;
-    font-family: montserrat;
-    letter-spacing: 2px;
-    font-size: 28px;
-}
-
-.technology-box .open-role-box-technology {
-    position: absolute;
-    background-color: rgb(200, 200, 200);
-    top: 7px;
-    left: 121.5vh;
-    width: 140px;
-    height: 25px;
-    border: none;
-    border-radius: 14px;
-}
-
-.open-role-box-technology .open-role-text-technology {
-    position: absolute;
-    top: 2px;
-    padding: 0px;
-    margin: 0px;
-    width: 140px;
-    height: 25px;
-    text-align: center;
-    font-family: montserrat;
-}
-
-.technology-box .text-box-technology {
-    position: absolute;
-    top: 60px;
-    display: flex;
-    width: 135.5vh;
-    height: 180px;
-    padding: 0px;
-    margin: 0px;
-    border: 1px solid black;
-}
-
-.technology-box .text-box-technology .job-title-technology {
-    position: absolute;
-    text-indent: 40px;
-    font-family: montserrat;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-.technology-box .text-box-technology .job-description-technology {
-    position: absolute;
-    top: 70px;
-    width: 130vh;
-    height: 120px;
-    padding: 0px;
-    margin: 0px;
-    text-indent: 40px;
-    font-family: montserrat;
-    font-size: 18px;
-} 
-
-.bottom-box {
-    position: fixed;
-    left: -20px;
-    top: 97vh;
-    padding: 0px;
-    margin: 0px;
-    width: 200vh;
-    height: 30px;
-    border: none;
-    background-color: #4286f5;
-}  
-
-.job-bar, .choose-location {
-    position: static;
 }
 
 .ai-support:hover {
-    background-color: rgb(220,220,220);
+    background-color: rgb(220, 220, 220);
 }
 
 .ai-support:active {
     background-color: white;
 }
 
+.ai-support-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+    background-image: url(./images/ai-support-logo.png);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+/* Job Sections */
+.job-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.job-section-title {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.open-role-box {
+    background-color: rgb(200, 200, 200);
+    padding: 5px 15px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.job-card {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+}
+
+.job-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
 .job-title:hover {
     color: #4286f5;
 }
 
-.job-title-technology:hover {
-    color: #4286f5;
+.job-description {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
+/* Footer */
+.bottom-box {
+    position: fixed;
+    top: 96vh;
+    width: 100%;
+    height: 50px;
+    background-color: #4286f5;
+}
+
+/* Custom Font */
 @font-face {
-    font-family: montserrat;
+    font-family: 'Montserrat';
     src: url(./font/Montserrat-VariableFont_wght.ttf);
 }

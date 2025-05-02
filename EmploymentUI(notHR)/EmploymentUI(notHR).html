@@ -3,61 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="style1.css">   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="style1.css">   
     <title>HireNova</title>
 </head>
 <body>
-
-    <div class="logo-box">
-        <button class="logo"></button>
+    <!-- Header with Logo -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 logo-box">
+                <button class="logo"></button>
+            </div>
+        </div>
     </div>
-
-    <div class="background">
+    
+    <!-- Main Hero Image -->
+    <div class="container-fluid p-0">
         <div class="main-image"></div>
     </div>
-
-    <div class="search-container">
-        <input type="text" placeholder="Search" id="job-bar" class="search">
-        <div id="choose-location" class="search">
-            <select>
-                <option value="1">Choose Location</option>
-                <option value="2">Ha Noi</option>
-                <option value="3">Da Nang</option>
-                <option value="4">Ho Chi Minh</option>
-            </select>
-        </div>
-        <button class="ai-support">AI Support</button>
-        <button class="ai-support-logo"></button>
-    </div>
-
-    <div class="open-position-box">
-        <h1>Open Positions</h1>
-    </div>
-
-    <div class="operation-box">
-        <h1 class="operation">Operation</h1>
-        <div class="open-role-box">
-            <p class="open-role-text">1 Open Role</p>
-        </div>
-        <div class="text-box">
-            <h1 class="job-title">Intermidiate Javascript Developer</h1>
-            <p class="job-description">Description</p>
-        </div>
-    </div>
-
-    <div class="technology-box">
-        <h1 class="technology">Technology</h1>
-        <div class="open-role-box-technology">
-            <p class="open-role-text-technology">1 Open Role</p>
-        </div>
-        <div class="text-box-technology">
-            <h1 class="job-title-technology">Intermidiate Javascript Developer</h1>
-            <p class="job-description-technology">Description</p>
+    
+    <!-- Search Section -->
+    <div class="container-fluid search-container">
+        <div class="container">
+            <div class=" d-lg-flex justify-content-between">
+                <div class="d-lg-flex justify-content-start col-lg-6 col-sm-12">
+                    <div class="">
+                        <input type="text" placeholder="Search" class="form-control search-form-control">
+                    </div>
+                    
+                    <div class="">
+                        <select class="f-seorm-select location-select">
+                            <option value="1">Choose Location</option>
+                            <option value="2">Ha Noi</option>
+                            <option value="3">Da Nang</option>
+                            <option value="4">Ho Chi Minh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="d-flex justify-content-end ">
+                        <div class="">
+                            <button class="ai-support btn me-2 flex-grow-1">AI Support</button>
+                            <button class="ai-support-logo"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="bottom-box"></div>
-
+    
+    <!-- Main Content Container -->
+    <div class="container py-4">
+        <!-- Open Positions Header -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="section-title">Open Positions</h1>
+            </div>
+        </div>
+        
+        <!-- Operations Section -->
+        <div class="job-section">
+            <div class="row mb-3 align-items-center">
+                <div class="col">
+                    <h2 class="job-section-title">Operation</h2>
+                </div>
+                <div class="col-auto">
+                    <div class="open-role-box">
+                        <p class="mb-0">1 Open Role</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="job-card">
+                <h3 class="job-title">Intermediate Javascript Developer</h3>
+                <p class="job-description">We are looking for an experienced JavaScript developer who can build interactive web applications. The ideal candidate should have strong knowledge of modern JavaScript frameworks and libraries, as well as experience with responsive design and cross-browser compatibility.</p>
+            </div>
+        </div>
+        
+        <!-- Technology Section -->
+        <div class="job-section">
+            <div class="row mb-3 align-items-center">
+                <div class="col">
+                    <h2 class="job-section-title">Technology</h2>
+                </div>
+                <div class="col-auto">
+                    <div class="open-role-box">
+                        <p class="mb-0">1 Open Role</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="job-card">
+                <h3 class="job-title">Intermediate Javascript Developer</h3>
+                <p class="job-description">Join our technology team to help develop cutting-edge web applications. You'll be working on complex technical challenges and implementing modern frontend solutions. Strong JavaScript skills required, along with experience in React, Vue or Angular.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="container-fluid p-0">
+        <div class="bottom-box"></div>
+    </div>
+    
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="script1.js"></script>
 </body>
 </html>
