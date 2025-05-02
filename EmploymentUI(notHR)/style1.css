@@ -13,6 +13,7 @@ body {
     padding: 0;
     border: 30px solid white;
     background-color: white;
+    display: flex;
 }
 
 .logo-box .logo{
@@ -30,6 +31,7 @@ body {
     background-size: 22vh;
     background-position: center;
     cursor: pointer;
+    display: flex;
 }
 
 .background {
@@ -37,30 +39,31 @@ body {
     display: flex;
     left: -10px;
     top: -10px;
-    width: 193.9vh;
+    width: 100vw;
     height: 2%;
 }
 
 .background .main-image {
     position: absolute;
-    width: 193.9vh;
+    width: 100vw;
     height: 50vh;
     background-image: url(./images/main-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+    display: flex;
 }
 
 .search-container {
     position: relative;
     top: 39vh;
     left: -8px;
-    width: 193.7vh;
+    width: 100vw;
     height: 100px;
     background-color: rgba(200, 200, 200, 0.7);
 }
 
-.search-container .job-bar {
+.search-container #job-bar {
     position: absolute;
     top: 30px;
     left: 160px;
@@ -74,9 +77,10 @@ body {
     font-size: 17px;
     text-indent: 60px;
     outline: none;
+    flex-wrap: wrap;
 }
 
-.search-container .choose-location select {
+.search-container #choose-location select {
     position: absolute;
     appearance: none;
     top: 30px;
@@ -92,9 +96,10 @@ body {
     text-align: left;
     text-indent: 20px;
     outline: none;
+    flex-wrap: wrap;
 }
 
-.choose-location::after {
+#choose-location::after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -106,9 +111,10 @@ body {
     border-left-color: transparent;
     border-top-color: transparent;
     transform: rotate(45deg);
+    display: flex;
 }
 
-.choose-location::before {
+#choose-location::before {
     content: '';
     position: absolute;
     z-index: 1;
@@ -120,6 +126,11 @@ body {
     border-left-color: transparent;
     border-top-color: transparent;
     transform: rotate(-135deg);
+    display: flex;
+}
+
+.search-container .search {
+    flex-wrap: wrap;
 }
 
 .search-container .ai-support {
@@ -137,6 +148,7 @@ body {
     text-align: center;
     transition: all 0.1s ease-in-out;
     cursor: pointer;
+    display: flex;
 }
 
 .search-container .ai-support-logo {
@@ -151,6 +163,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
+    display: flex;
 }
 
 .open-position-box {
@@ -320,6 +333,10 @@ body {
     height: 30px;
     border: none;
     background-color: #4286f5;
+}  
+
+.job-bar, .choose-location {
+    position: static;
 }
 
 .ai-support:hover {
