@@ -120,6 +120,7 @@ body {
     font-family: montserrat;
     font-size: 19px;
     color: #4286f5;
+    transition: all 0.2s ease-in-out;
 }
 
 .job-description-container {
@@ -134,6 +135,11 @@ body {
     margin-top: 7vh;
     font-family: montserrat;
     font-size: 20px;
+}
+
+.apply-button:hover {
+    color: white;
+    background-color: #4286f5;
 }
 
 @font-face {
