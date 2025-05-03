@@ -1,125 +1,139 @@
 body {
-    background-color: white;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
+
+/* Header and Logo */
 .logo-box {
-    position: relative;
-    display: flex;
-    left: -10px;
-    top: -10px;
-    width: 98%;
-    height: 30px;
-    margin: 0;
     padding: 0;
-    border: 30px solid white;
-    background-color: white;
 }
 
-.logo-box .logo{
-    position: absolute;
-    top: -20px;
-    left: 200px;
-    width: 320px;
-    height: 80px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: white;
+.logo {
+    width: 220px;
+    height: 100px;
     background-image: url(./images/logo.png);
     background-repeat: no-repeat;
-    background-size: 22vh;
+    background-size: contain;
     background-position: center;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
-.background {
-    position: relative;
-    display: flex;
-    left: -10px;
-    top: -10px;
-    width: 193.9vh;
+.main-image {
+    width: 100%;
     height: 50vh;
-    background-image: linear-gradient(0, rgba(66,134,245,0.8)),
-    url(./images/main-image.jpg);
+    background-image: linear-gradient(0, rgba(66,134,245,0.6)), url(./images/main-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    background-position: center;
 }
 
-.background .main-application-box {
-    position: absolute;
-    top: 100px;
-    width: 193.9vh;
-    height: 40vh;
+.go-back-arrow-button-container {
+    position: relative;
+    top: -46vh;
+    width: 100%;
+    height: 40px;
 }
 
-.background .main-application-box .job-title {
-    position: absolute;
-    text-indent: 20vh;
-    color: white;
+.go-back-arrow-container {
+    width: 20%;
+    height: 40px;
+    margin-left: 20%;
+}
+
+.go-back-arrow {
+    width: 20px;
+    height: 20px;
+    border: 4px solid white;
+    background-color: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    transform: rotate(-45deg)
+}
+
+.open-position-button {
+    width: 200px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
     font-family: montserrat;
-    letter-spacing: 2px;
-    font-size: 45px;
-}
-
-.background .main-application-box .job-location {
-    position: absolute;
-    top: 20vh;
-    text-indent: 20vh;
-    font-size: 23px;
+    color: white;
+    text-align: left;
+    font-size: 24px;
     font-weight: bold;
-    font-family: montserrat;
-    color: white;
-    padding: 0px;
-    margin: 0px;
 }
 
-.background .main-application-box .apply-button {
-    position: absolute;
-    top: 120px;
-    left: 155vh;
+.job-title-description-container {
+    position: relative;
+    top: -40vh;
+    left: 20%;
+    width: 80%;
+    height: 36vh;
+}
+
+.job-title-container {
+    margin-left: 20px;
+    width: 100%;
+    height: 10vh;
+}
+
+.job-title {
+    font-family: montserrat;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.job-location-container {
+    margin-left: 20px;
+    margin-top: 60px;
+    width: 100%;
+    height: 10vh;
+}
+
+.job-location {
+    font-family: montserrat;
+    font-size: 24px;
+    color: white;
+}
+
+.apply-button-container {
+    position: relative;
+    top: -68vh;
+    left: 40%;
+    width: 200px;
+    height: 200px;
+}
+
+.apply-button-space {
+    width: 200px;
+    height: 200px;
+}
+
+.apply-button {
     width: 150px;
     height: 50px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: montserrat;
-    font-size: 17px;
+    font-size: 19px;
     color: #4286f5;
-    letter-spacing: 2px;
-    cursor: pointer;
 }
-.go-back-button {
+
+.job-description-container {
     position: relative;
-    top: 40px;
-    left: 20vh;
-    width: 230px;
-    height: 50px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+    bottom: 62vh;
+    width: 80%;
+    height: 40vh;
 }
 
-.go-back-button .arrow {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    background-color: transparent;
-    border: 4px solid white;
-    border-right: transparent;
-    border-bottom: transparent;
-    transform: rotate(-45deg);
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}
-
-.go-back-button .open-positions-text {
-    position: absolute;
+.job-description {
+    margin-left: 10%;
+    margin-top: 7vh;
     font-family: montserrat;
-    font-size: 24px;
-    left: 35px;
-    top: -6px;
-    color: white;
+    font-size: 20px;
 }
 
 @font-face {
