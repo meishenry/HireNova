@@ -1,0 +1,382 @@
+body {
+    overflow-x: hidden;
+}
+
+.dashboard-container {
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.heading-candidate-container {
+    position: relative;
+    top: 2vh;
+    left: 6%;
+    border: none;
+    background-color: white;
+    width: 90%;
+    height: 7vh;
+    border-radius: 20px;
+}
+
+.candidate-heading-container {
+    width: 50vh;
+    height: 7vh;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+
+.candidate-heading {
+    font-family: montserrat;
+    letter-spacing: 2px;
+}
+
+.icon-account-container {
+    width: 40vh;
+}
+
+.message-icon-container {
+    width: 10vh;
+    justify-items: flex-end;
+}
+
+.notification-icon-container {
+    width: 10vh;
+    justify-items: center;
+}
+
+.account-container {
+    width: 96px;
+}
+
+.message-icon {
+    margin-top: 14px;
+    width: 48px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    background-image: url(./images/message-icon.png);
+    background-repeat: no-repeat;
+    background-size: 4vh;
+}
+
+.notification-icon {
+    margin-top: 14px;
+    width: 48px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    background-image: url(./images/notification-icon.png);
+    background-repeat: no-repeat;
+    background-size: 3.5vh;
+}
+
+.account-icon {
+    margin-top: 10.5px;
+    width: 11vw;
+    height: 50px;
+    border: none;
+    background-color: white;
+    background-image: url(./images/account-icon.png);
+    background-repeat: no-repeat;
+    background-size: 22vh;
+}
+
+.information-search-container {
+    position: relative;
+    top: 5vh;
+    left: 6%;
+    background-color: white;
+    width: 90%;
+    height: 110vh;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-control-container {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 7vh;
+}
+
+.search-bar-container {
+    justify-items: flex-start;
+    margin-left: 60px;
+}
+
+.search-bar {
+    width: 38vh;
+    height: 40px;
+    text-indent: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: montserrat;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-bar {
+    height: 40px;
+    text-indent: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: montserrat;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.search-and-filter-container {
+    width: 100vh;
+}
+
+.sort-button-container {
+    width: 100vh;
+}
+
+.date-selection-container {
+    justify-items: flex-end;
+}
+
+.date-selection {
+    width: 250px;
+    height: 40px;
+    text-indent: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    margin-right: 10px;
+    font-family: montserrat;
+    letter-spacing: 2px;
+}
+
+.sort-by-p-container {
+    justify-items: flex-end;
+}
+
+.sort-by {
+    margin-top: 6px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.sort-date {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-indent: 10px;
+    font-family: montserrat;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.add-button-container {
+    justify-items: center;
+}
+
+.add-button {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(217,244,115,1);
+    font-family: montserrat;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.section-control-container {
+    position: relative;
+    top: 20px;
+    left: 37px;
+}
+
+.section-button-container {
+    width: 100%;
+}
+
+.all-button {
+    width: 60px;
+}
+
+.in-review-button {
+    width: 120px;
+}
+
+.all-button-container, .in-review-button-container, .review-button-container, .hired-button-container, .rejected-button-container {
+    justify-items: center;
+}
+
+.all-button, .in-review-button, .review-button, .hired-button, .rejected-button {
+    border: none;
+    background-color: transparent;
+    font-family: montserrat;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sort-data-container {
+    position: relative;
+    top: 20px;
+    left: 4%;
+    width: 93%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sort-data-button-container {
+    width: 100%;
+    height: 50px;
+}
+
+.sort-name,
+.sort-role,
+.sort-employment,
+.sort-work,
+.sort-applied,
+.sort-attachment,
+.sort-status,
+.sort-score {
+    margin-top: 3px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-family: montserrat;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.sort-name-container,
+.sort-role-container,
+.sort-employment-container,
+.sort-work-container,
+.sort-applied-container,
+.sort-attachment-container,
+.sort-status-container,
+.sort-score-container {
+    justify-items: flex-start;
+    padding: 0;
+}
+
+.candidate-attachment-container {
+    position: relative;
+    right: 10px
+}
+
+.candidate-data-container {
+    position: relative;
+    top: 20px;
+    width: 93%;
+    left: 4%;
+    height: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.cv,
+.resumes,
+.referrence {
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: montserrat;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.candidate,
+.role,
+.rejected,
+.interview,
+.in-review,
+.hired{
+    margin-top: 22px;
+    font-size: 17px;
+    font-family: montserrat;
+}
+
+.rejected {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #df5550;
+    color: white;
+}
+
+.in-review {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #dfe2fd;
+}
+
+.interview {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #d9f473;
+}
+
+.hired {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #b0b7fa;
+}
+
+.sort-data-button-container {
+    position: relative;
+    left: 10px;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #4286f5;
+    box-shadow: inset 0 1px 4px #4286f5, 0 0 5px 2px #4286f5;
+}
+
+.filter-bar:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.date-selection:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sort-date:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.add-button:hover {
+    background-color: rgb(199, 235, 69);
+}
+
+.all-button:focus {
+    background-color: rgb(199, 235, 69);
+}
+
+.in-review-button:focus {
+    background-color: rgb(199, 235, 69);
+}
+
+.review-button:focus {
+    background-color: rgb(199, 235, 69);
+}
+
+.hired-button:focus {
+    background-color: rgb(199, 235, 69);
+}
+
+.rejected-button:focus {
+    background-color: rgb(199, 235, 69);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
