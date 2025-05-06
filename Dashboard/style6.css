@@ -1,112 +1,135 @@
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
+
 body {
     overflow-x: hidden;
+    font-family: montserrat, sans-serif;
 }
 
 .dashboard-container {
     width: 100%;
-    height: 200vh;
+    min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
 }
 
 .heading-candidate-container {
     position: relative;
     top: 2vh;
-    left: 6%;
+    left: 0;
+    margin: 0 auto;
     border: none;
     background-color: white;
     width: 90%;
-    height: 7vh;
+    min-height: 7vh;
     border-radius: 20px;
+    padding: 10px 0;
 }
 
 .candidate-heading-container {
-    width: 50vh;
     height: 7vh;
-    margin-left: 50px;
-    margin-top: 8px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .candidate-heading {
     font-family: montserrat;
     letter-spacing: 2px;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .icon-account-container {
-    width: 40vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 7vh;
 }
 
-.message-icon-container {
-    width: 10vh;
-    justify-items: flex-end;
-}
-
+.message-icon-container,
 .notification-icon-container {
-    width: 10vh;
-    justify-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .account-container {
-    width: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.message-icon,
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .message-icon {
-    margin-top: 14px;
-    width: 48px;
-    height: 50px;
-    border: none;
-    background-color: white;
     background-image: url(./images/message-icon.png);
-    background-repeat: no-repeat;
-    background-size: 4vh;
 }
 
 .notification-icon {
-    margin-top: 14px;
-    width: 48px;
-    height: 50px;
-    border: none;
-    background-color: white;
     background-image: url(./images/notification-icon.png);
-    background-repeat: no-repeat;
-    background-size: 3.5vh;
 }
 
 .account-icon {
-    margin-top: 10.5px;
-    width: 11vw;
-    height: 50px;
+    height: 40px;
+    width: 250px;
     border: none;
     background-color: white;
     background-image: url(./images/account-icon.png);
     background-repeat: no-repeat;
-    background-size: 22vh;
+    background-size: cover;
+    background-position: right center;
 }
 
 .information-search-container {
     position: relative;
     top: 5vh;
-    left: 6%;
+    margin: 0 auto;
     background-color: white;
     width: 90%;
-    height: 110vh;
     border: none;
     border-radius: 20px;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .search-control-container {
-    position: relative;
-    top: 20px;
     width: 100%;
-    height: 7vh;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.search-and-filter-row-container {
+    margin-top: 10px;
+}
+
+.search-and-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .search-bar-container {
-    justify-items: flex-start;
-    margin-left: 60px;
+    flex: 1;
+    min-width: 200px;
+    margin-left: 10px;
 }
 
 .search-bar {
-    width: 38vh;
+    width: 400px;
     height: 40px;
     text-indent: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -116,55 +139,67 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
+.filter-container {
+    flex: 2;
+    width: 100px;
+}
+
 .filter-bar {
+    width: 100px;
     height: 40px;
     text-indent: 20px;
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     font-family: montserrat;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transition: all 0.2s ease-in-out;
-}
-
-.search-and-filter-container {
-    width: 100vh;
 }
 
 .sort-button-container {
-    width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .date-selection-container {
-    justify-items: flex-end;
+    flex: 2;
+    min-width: 200px;
 }
 
 .date-selection {
-    width: 250px;
+    width: 100%;
     height: 40px;
     text-indent: 20px;
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
-    margin-right: 10px;
     font-family: montserrat;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .sort-by-p-container {
-    justify-items: flex-end;
+    display: flex;
+    align-items: center;
 }
 
 .sort-by {
-    margin-top: 6px;
-    margin-right: 10px;
-    letter-spacing: 2px;
-    font-size: 18px;
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.sort-date-container {
+    flex: 1;
+    min-width: 100px;
 }
 
 .sort-date {
-    width: 100px;
+    width: 100%;
     height: 40px;
     border: none;
     border-radius: 10px;
@@ -176,11 +211,12 @@ body {
 }
 
 .add-button-container {
-    justify-items: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .add-button {
-    width: 70px;
+    min-width: 70px;
     height: 40px;
     border: none;
     border-radius: 10px;
@@ -188,51 +224,48 @@ body {
     font-family: montserrat;
     letter-spacing: 2px;
     transition: all 0.2s ease-in-out;
+    padding: 0 15px;
 }
 
 .section-control-container {
-    position: relative;
-    top: 20px;
-    left: 37px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    overflow-x: auto;
 }
 
 .section-button-container {
-    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    min-width: max-content;
 }
 
-.all-button {
-    width: 60px;
-}
-
-.in-review-button {
-    width: 120px;
-}
-
-.all-button-container, .in-review-button-container, .review-button-container, .hired-button-container, .rejected-button-container {
-    justify-items: center;
-}
-
-.all-button, .in-review-button, .review-button, .hired-button, .rejected-button {
+.all-button,
+.in-review-button,
+.review-button,
+.hired-button,
+.rejected-button {
     border: none;
     background-color: transparent;
     font-family: montserrat;
     letter-spacing: 1px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
+    padding: 8px 15px;
+    white-space: nowrap;
 }
 
 .sort-data-container {
-    position: relative;
-    top: 20px;
-    left: 4%;
-    width: 93%;
-    height: 50px;
+    margin: 0 20px 15px;
     background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-x: auto;
 }
 
 .sort-data-button-container {
-    width: 100%;
-    height: 50px;
+    display: flex;
+    min-width: max-content;
+    padding: 5px 10px;
 }
 
 .sort-name,
@@ -243,111 +276,108 @@ body {
 .sort-attachment,
 .sort-status,
 .sort-score {
-    margin-top: 3px;
     height: 40px;
     border: none;
     background-color: transparent;
     font-family: montserrat;
     font-size: 14px;
     letter-spacing: 1px;
-}
-
-.sort-name-container,
-.sort-role-container,
-.sort-employment-container,
-.sort-work-container,
-.sort-applied-container,
-.sort-attachment-container,
-.sort-status-container,
-.sort-score-container {
-    justify-items: flex-start;
-    padding: 0;
-}
-
-.candidate-attachment-container {
-    position: relative;
-    right: 10px
+    width: 100%;
+    text-align: left;
+    padding: 0 5px;
 }
 
 .candidate-data-container {
-    position: relative;
-    top: 20px;
-    width: 93%;
-    left: 4%;
-    height: 100px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-left: transparent;
-    border-right: transparent;
+    margin: 0 20px 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.candidate-container {
+    display: flex;
+    min-width: max-content;
+    align-items: center;
+}
+
+.candidate-name-container,
+.candidate-role-container,
+.candidate-employment-container,
+.candidate-work-container,
+.candidate-applied-container,
+.candidate-attachment-container,
+.candidate-status-container,
+.candidate-score-container {
+    padding: 0 5px;
 }
 
 .cv,
 .resumes,
 .referrence {
-    margin-top: 10px;
     border: none;
     background-color: transparent;
     border-radius: 10px;
     font-weight: bold;
     font-family: montserrat;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 5px;
+    display: inline-block;
 }
 
 .candidate,
-.role,
+.role {
+    font-size: 15px;
+    font-family: montserrat;
+    margin: 0;
+    word-break: break-word;
+}
+
+.role {
+    font-size: 13px;
+    color: #666;
+}
+
 .rejected,
 .interview,
 .in-review,
-.hired{
-    margin-top: 22px;
-    font-size: 17px;
+.hired {
+    font-size: 14px;
     font-family: montserrat;
+    margin: 0;
+    padding: 8px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .rejected {
-    padding: 8px;
-    border-radius: 10px;
     background-color: #df5550;
     color: white;
 }
 
 .in-review {
-    padding: 8px;
-    border-radius: 10px;
     background-color: #dfe2fd;
 }
 
 .interview {
-    padding: 8px;
-    border-radius: 10px;
     background-color: #d9f473;
 }
 
 .hired {
-    padding: 8px;
-    border-radius: 10px;
     background-color: #b0b7fa;
 }
 
-.sort-data-button-container {
-    position: relative;
-    left: 10px;
-}
-
+/* Focus & hover states */
 .search-bar:focus {
     outline: none;
     border-color: #4286f5;
-    box-shadow: inset 0 1px 4px #4286f5, 0 0 5px 2px #4286f5;
+    box-shadow: 0 0 0 2px rgba(66, 134, 245, 0.3);
 }
 
-.filter-bar:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.date-selection:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
+.filter-bar:hover,
+.date-selection:hover,
 .sort-date:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -356,27 +386,104 @@ body {
     background-color: rgb(199, 235, 69);
 }
 
-.all-button:focus {
+.all-button:focus,
+.in-review-button:focus,
+.review-button:focus,
+.hired-button:focus,
+.rejected-button:focus,
+.all-button:active,
+.in-review-button:active,
+.review-button:active,
+.hired-button:active,
+.rejected-button:active {
     background-color: rgb(199, 235, 69);
 }
 
-.in-review-button:focus {
-    background-color: rgb(199, 235, 69);
+
+@media (max-width: 992px) {
+    .candidate-container {
+        overflow-x: auto;
+    }
+    
+    .heading-candidate-container {
+        padding: 15px 0;
+    }
+    
+    .candidate-heading {
+        font-size: 1.3rem;
+    }
+    
+    .section-button-container {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
 }
 
-.review-button:focus {
-    background-color: rgb(199, 235, 69);
+@media (max-width: 768px) {
+    .heading-candidate-container {
+        width: 95%;
+    }
+    
+    .information-search-container {
+        width: 95%;
+    }
+    
+    .candidate-heading-container {
+        margin-left: 10px;
+    }
+    
+    .search-control-container {
+        flex-direction: column;
+    }
+    
+    .search-and-filter-container,
+    .sort-button-container {
+        width: 100%;
+    }
+    
+    .date-selection-container,
+    .sort-date-container,
+    .add-button-container {
+        margin-top: 10px;
+    }
+    
+    .icon-account-container {
+        justify-content: center;
+    }
 }
 
-.hired-button:focus {
-    background-color: rgb(199, 235, 69);
-}
-
-.rejected-button:focus {
-    background-color: rgb(199, 235, 69);
-}
-
-@font-face {
-    font-family: montserrat;
-    src: url(./font/Montserrat-VariableFont_wght.ttf);
+@media (max-width: 576px) {
+    .heading-candidate-container {
+        width: 98%;
+    }
+    
+    .information-search-container {
+        width: 98%;
+        top: 3vh;
+    }
+    
+    .search-bar-container,
+    .filter-container {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }    
+    
+    .candidate-heading {
+        font-size: 1.2rem;
+    }
+    
+    .sort-by {
+        font-size: 14px;
+    }
+    
+    .all-button, 
+    .in-review-button, 
+    .review-button, 
+    .hired-button, 
+    .rejected-button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
 }
