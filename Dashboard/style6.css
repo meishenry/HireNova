@@ -338,6 +338,21 @@ body {
     color: #666;
 }
 
+.candidate-status-container .status-select {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    width: 100%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    padding-right: 20px;
+    background-color: #b0b7fa;
+}
+
 .rejected,
 .interview,
 .in-review,
