@@ -1,0 +1,184 @@
+body {
+  overflow: hidden;
+}
+
+.cv-output-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.blue-collar {
+  width: 17%;
+  height: 100vh;
+  background-color: #4286f5;
+}
+
+.row-container1 {
+  width: 100%;
+  height: 33vh;
+}
+
+.picture-output-container {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 25vh;
+  background-color: rgba(200, 200, 200);
+  z-index: -1;
+}
+
+.picture-output {
+  margin-top: 10px;
+  width: 22vh;
+  height: 29vh;
+  background-color: white;
+
+}
+
+.row-container2 {
+  position: relative;
+  top: 20px;
+  left: 5%;
+  width: 30%;
+  height: 60px;
+}
+
+.headline-container {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(200, 200, 200);
+  border-radius: 10px;
+  align-items: center;
+}
+
+.headline {
+  font-family: montserrat;
+  font-size: 1.3em;
+}
+
+.row-container3 {
+  position: relative;
+  top: 6vh;
+  left: -17.05%;
+  width: 100%;
+  height: 27vh;
+  background-color: rgba(200, 200, 200);
+  border-radius: 10px;
+}
+
+.input {
+  margin-top: 30px;
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+  text-indent: 20px;
+  font-family: montserrat;
+  font-size: 1.2em;
+}
+
+.applied {
+  margin-top: 30px;
+  width: 80%;
+  height: 210px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cv-button-container {
+  position: relative;
+  left: 16.09%;
+  bottom: 67vh;
+  width: 83%;
+  height: 20vh;
+}
+
+.row-container4 {
+  width: 100%;
+  height: 20vh;
+}
+
+.cv,
+.resume {
+  margin-top: 20px;
+  font-family: montserrat;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.ai-table-container {
+  position: relative;
+  left: 16.09%;
+  bottom: 72vh;
+  width: 83%;
+  height: 40vh;
+}
+
+.table-container {
+  width: 100%;
+  height: 40vh;
+}
+
+.headline-table {
+  width: 83.5%;
+  height: 40px;
+  border: 2px solid rgba(200, 200, 200);
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.row-container5 {
+  width: 100%;
+}
+
+.criteria,
+.cv-description,
+.percentage-score,
+.criteria-weight,
+.ai-judge {
+  font-family: montserrat;
+  font-size: 1em;
+}
+
+.headline-criteria,
+.headline-cv-description,
+.headline-percentage,
+.headline-criteria-weight {
+  border-right: 2px solid rgba(200, 200, 200);
+}
+
+.output-table {
+  width: 83.5%;
+  height: 30vh;
+  border: 2px solid rgba(200, 200, 200);
+  border: transparent;
+}
+
+.criteria-output,
+.cv-description-output,
+.percentage-output,
+.criteria-weight-output,
+.ai-judge-output {
+  width: 100%;
+  border: none;
+  font-family: montserrat;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.output-criteria,
+.output-cv-description,
+.output-percentage,
+.output-criteria-weight {
+  border-right: 2px solid rgba(200, 200, 200);
+}
+
+.cv:hover,
+.resume:hover {
+  color: #4286f5;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(./font/Montserrat-VariableFont_wght.ttf);
+}

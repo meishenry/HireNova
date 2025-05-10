@@ -1,0 +1,143 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header and Logo */
+.logo-box {
+    padding: 0;
+}
+
+.logo {
+    width: 220px;
+    height: 100px;
+    background-image: url(./images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.main-image {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(0, rgba(66,134,245,0.6)), url(./images/main-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.go-back-arrow-button-container {
+    position: relative;
+    top: -46vh;
+    width: 100%;
+    height: 40px;
+}
+
+.go-back-arrow-container {
+    width: 20%;
+    height: 40px;
+    margin-left: 20%;
+}
+
+.go-back-arrow {
+    width: 20px;
+    height: 20px;
+    border: 4px solid white;
+    background-color: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    transform: rotate(-45deg)
+}
+
+.open-position-button {
+    width: 200px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    font-family: montserrat;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.job-title-description-container {
+    position: relative;
+    top: -40vh;
+    left: 20%;
+    width: 80%;
+    height: 36vh;
+}
+
+.job-title-container {
+    margin-left: 20px;
+    width: 100%;
+    height: 10vh;
+}
+
+.job-title {
+    font-family: montserrat;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.job-location-container {
+    margin-left: 20px;
+    margin-top: 60px;
+    width: 100%;
+    height: 10vh;
+}
+
+.job-location {
+    font-family: montserrat;
+    font-size: 24px;
+    color: white;
+}
+
+.apply-button-container {
+    position: relative;
+    top: -68vh;
+    left: 40%;
+    width: 200px;
+    height: 200px;
+}
+
+.apply-button-space {
+    width: 200px;
+    height: 200px;
+}
+
+.list-button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-family: montserrat;
+    font-size: 1.1em;
+    color: black;
+    background-color: white;
+}
+
+.job-description-container {
+    position: relative;
+    bottom: 62vh;
+    width: 80%;
+    height: 40vh;
+}
+
+.job-description {
+    margin-left: 10%;
+    margin-top: 7vh;
+    font-family: montserrat;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
