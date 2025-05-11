@@ -1,0 +1,252 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, sans-serif;
+}
+
+.blue-collar {
+    position: fixed;
+    width: 14%;
+    height: 100vh;
+    background-color: #4286f5;
+    z-index: 10;
+}
+
+.dashboard-container {
+    position: relative;
+    margin-left: 14%;
+    width: 86%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.search-email-container {
+    position: relative;
+    top: 10vh;
+    left: 15%;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-email {
+    width: 40%;
+    min-width: 200px;
+    font-family: montserrat;
+    text-indent: 30px;
+    border: 2px solid rgba(200, 200, 200);
+    border-radius: 10px;
+    padding: 8px 0;
+}
+
+.filter-email {
+    margin-left: 5%;
+    width: 130px;
+    font-family: montserrat;
+    text-indent: 10px;
+    border: 2px solid rgba(200, 200, 200);
+    border-radius: 10px;
+    padding: 8px 0;
+}
+
+.headline-filter-container {
+    position: relative;
+    top: 20vh;
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    background-color: rgba(200, 200, 200);
+    overflow-x: auto;
+}
+
+.row-container1 {
+    min-height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.check {
+    margin-left: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.status,
+.email,
+.applied,
+.employment,
+.work,
+.date {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 5px;
+    white-space: nowrap;
+}
+
+.candidate-filter-container {
+    position: relative;
+    top: 20vh;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.candidate {
+    text-align: center;
+    font-family: montserrat;
+    font-size: 1.1em;
+    padding: 10px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navigation-container {
+    position: relative;
+    top: 30vh;
+    width: 100%;
+    height: 60px;
+    padding-right: 30px;
+}
+
+.row-container2 {
+    width: 100%;
+    height: 60px;
+}
+
+.previous,
+.next {
+    margin-right: 10px;
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    font-family: montserrat;
+    transition: all 0.1s ease-in-out;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: #4286f5;
+    color: white;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Media Queries cho responsive */
+@media (max-width: 1200px) {
+    .search-email-container {
+        left: 5%;
+        width: 90%;
+    }
+    
+    .search-email {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .blue-collar {
+        width: 10%;
+    }
+    
+    .dashboard-container {
+        margin-left: 10%;
+        width: 90%;
+    }
+    
+    .search-email-container {
+        left: 2%;
+        width: 95%;
+    }
+    
+    .search-email {
+        width: 60%;
+    }
+    
+    .candidate, .status, .email, .applied, .employment, .work, .date {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .blue-collar {
+        width: 8%;
+    }
+    
+    .dashboard-container {
+        margin-left: 8%;
+        width: 92%;
+    }
+    
+    .search-email-container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    
+    .search-email, .filter-email {
+        width: 90%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .navigation-container {
+        padding-right: 10px;
+    }
+    
+    .previous, .next {
+        width: 80px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .blue-collar {
+        width: 15px;
+    }
+    
+    .dashboard-container {
+        margin-left: 15px;
+        width: calc(100% - 15px);
+    }
+    
+    .search-email-container {
+        top: 5vh;
+    }
+    
+    .headline-filter-container {
+        top: 15vh;
+    }
+    
+    .candidate-filter-container {
+        top: 15vh;
+    }
+    
+    .navigation-container {
+        top: 20vh;
+    }
+    
+    .candidate, .status, .email, .applied, .employment, .work, .date {
+        font-size: 0.8em;
+        padding: 5px 2px;
+    }
+    
+    .check {
+        width: 15px;
+        height: 15px;
+    }
+}

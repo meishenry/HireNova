@@ -1,0 +1,120 @@
+.logo-box {
+    padding: 0;
+}
+
+.logo {
+    width: 220px;
+    height: 100px;
+    background-image: url(./images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.search-control-container {
+    height: 70px;
+    background-color: #4286f5;
+}
+
+.search {
+    width: 23%;
+    height: 40px;
+    margin-left: 15%;
+    border: none;
+    border-radius: 10px;
+    text-indent: 40px;
+    outline: none;
+}
+
+.interview-container {
+    position: relative;
+    top: 30px;
+    height: 100px;
+}
+
+.interview {
+    font-family: montserrat;
+    text-indent: 100px;
+    font-weight: bold;
+}
+
+.interviewee-container {
+    position: relative;
+    left: 10vh;
+    height: 50px;
+}
+
+.interviewee-container3 {
+    position: relative;
+    left: 10vh;
+    height: 50px;
+    top: 50px;
+}
+
+.interviewee-container4 {
+    position: relative;
+    left: 10vh;
+    height: 50px;
+    top: 100px;
+}
+
+.interviewee {
+    width: 45%;
+    text-indent: 40px;
+    text-align: start;
+    border: 2px solid #4286f5;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+.interviewee2,
+.interviewee3,
+.interviewee4 {
+    width: 45%;
+    text-indent: 40px;
+    text-align: start;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+.interviewee2 {
+    border: 2px solid #34a853;
+}
+
+.interviewee3 {
+    border: 2px solid #fbbc05;
+}
+
+.interviewee4 {
+    border: 2px solid #ea4335;
+}
+
+.interviewee:hover {
+    background-color: #4286f5;
+    color: white;
+}
+
+.interviewee2:hover {
+    background-color: #34a853;
+    color: white;
+}
+
+.interviewee3:hover {
+    background-color: #fbbc05;
+    color: white;
+}
+
+.interviewee4:hover {
+    background-color: #ea4335;
+    color: white;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}

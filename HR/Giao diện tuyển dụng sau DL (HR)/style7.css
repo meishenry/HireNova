@@ -32,7 +32,7 @@
     background-image: url(./images/main-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -250px;
+    background-position-y: center;
 }
 
 /* Search Container */
